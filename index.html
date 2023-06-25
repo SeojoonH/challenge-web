@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Last Mission</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner-box01">
+        <div class="box1">
+          <h2 class="clock-text">현재 시각</h2>
+          <h2 id="clock">00:00:00</h2>
+        </div>
+        <div class="box2">
+          <form id="login-form">
+            <input
+              required
+              maxlength="12"
+              id="login-input"
+              type="text"
+              placeholder="id를 입력해주세요."
+            />
+            <button id="login-btn">로그인</button>
+          </form>
+          <h2 id="greeting" class="hidden"></h2>
+        </div>
+      </div>
+      <div class="inner-box02">
+        <div class="box3">
+          <h2>오늘 할 일</h2>
+          <form class="js-toDoForm">
+            <input type="text" placeholder="오늘 할 일을 등록해 주세요." />
+          </form>
+          <ul class="js-toDoList"></ul>
+        </div>
+        <div class="box4">
+          <div id="weather">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./randBgImg.js"></script>
+    <script src="./weather.js"></script>
+    <script src="./todolist.js"></script>
+    <script src="./clocks.js"></script>
+    <script src="./login.js"></script>
+  </body>
+</html>
